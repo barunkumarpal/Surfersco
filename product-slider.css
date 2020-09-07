@@ -1,0 +1,15 @@
+.swiper-pagination{
+    width: 50px;
+    left: 70vw;
+    top:23vw; 
+    background:#000;
+    height:25px;
+    color:#fff;    
+}
+
+@media (max-width: 575px){
+    .swiper-pagination{
+        display: none !important;
+    }
+}
+

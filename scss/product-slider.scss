@@ -1,0 +1,83 @@
+.product-slider{
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    background: #fff;
+
+    @include x-small{
+        width: 80vw;
+    }
+    .swiper-slide{
+        .box{ 
+            &.one{
+                .img-sec{
+                    &.bg-1{
+                        background: url('img/bg-one-prod.png') no-repeat;
+                        background-size: contain;
+                        background-position: left top;
+                        background-origin: content-box;
+                    }
+                    img{
+                        
+                    }
+                } 
+                .desc-sec{
+                    .prod-title{
+                        font-family: $montserrat-bold;
+                    }
+                    .rating{
+                        font-family: $montserrat-reg;
+                        .fas{
+                            &.fa-star{
+                                color: #f2d800;
+                            }                             
+                        }
+                    }
+                    .desc-tab-links{
+                        .nav-item{
+                            .nav-link{
+                                border: none;
+                                font-family: $raleway-bold;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                color: gray;
+                                font-weight: bold;
+                                &.active{
+                                    background: transparent;
+                                    color: #000;
+                                    border-bottom: 2px solid $primary-color;
+                                }
+                            }
+                        }
+                    }
+                    .buy{
+                        display: flex;
+                        flex-wrap: wrap;                        
+                        align-items: center;
+                        
+                        .price{
+                            font-family: $montserrat-bold;
+                            font-size: 17px;
+                            margin-right: 10px;
+                        }                      
+                        .buy-now{
+                            background: $primary-color;
+                            border: none;
+                            color: #fff;
+                            padding: 5px 15px 5px 15px;
+                        }                        
+                    }
+                    .view-all{
+                        padding-top: 20px;                        
+                        display: block;
+                    }
+                    
+                    
+                }
+            }
+
+        }
+    } 
+    
+    
+}

@@ -1,0 +1,22 @@
+.hero{
+
+    &.bg-img{
+        background: url('img/hero-background.jpg') no-repeat 100% 50%;
+        background-position: left top;
+    }
+
+    .desc-sec{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .heading{
+            font-family: $play-italic;
+            font-size: 40px;
+            text-align: center;
+        }
+        .desc{
+            color: #fff;
+            text-align: center;
+            font-family: $play-italic;
+        }
+    }
+}

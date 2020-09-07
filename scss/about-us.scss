@@ -1,0 +1,95 @@
+.about-us{
+    background: url('img/surfers-background.jpg') no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    // padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 160px;
+
+    .heading{
+        position: relative;
+        font-size: 100px;
+        text-align: center;
+        font-family: $montserrat-bold;
+        text-transform: uppercase;
+        color: #c2c1c128;         
+        transform: translateY(-70%); 
+        z-index: 500;         
+        letter-spacing: 10px;
+    }
+    .desc-sec{
+        background: #fff;
+        transform: translateY(30%);
+        padding-top: 30px;
+        .desc-box{
+            padding: 30px;
+            width: 50%;
+            margin-left: auto;
+
+            @include x-small{
+                width: 100%;
+                margin: auto;
+            }
+            .title{
+                text-align: center;
+                font-family: $montserrat-reg;
+                font-size: 14px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            .desc{
+                font-family: $play-italic;
+            }
+            .link{
+                color: $primary-color;
+                font-size: 12px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                display: block;
+                
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .video-sec{
+        transform: translateY(90%);
+        .video-box{
+            padding-left: 30px;
+
+            @include x-small{
+                padding-left: 0;    
+            }
+            .img{
+                position: relative;
+
+                
+                
+                img{
+                    width: 50%;
+                    &.play-button{
+                        position: absolute;
+                        top: 22%;
+                        left: 17%;
+                        max-width: 100%;
+                        width: 100px;
+
+                        @include x-small{
+                            top: 35%;
+                            left: 51%;
+                            transform: translateX(-50%);
+                            width: 50px;
+                        }
+                    }
+
+                    @include x-small{
+                        position: relative;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
+}

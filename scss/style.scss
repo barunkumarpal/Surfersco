@@ -1,0 +1,23 @@
+@import 'font-face';
+@import 'variables';
+@import 'mixins';
+@import 'hero';
+@import 'navbar';
+@import 'product-slider';
+@import 'about-us.scss';
+@import 'testimonial_slider';
+
+body{
+    font-family: $montserrat-reg;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+p{
+    margin: 0;
+}
